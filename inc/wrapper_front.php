@@ -33,13 +33,13 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "formsignin")) {
 ?>
 <div class="container">
     <div class="col_2">
-        <div class="lin_3">
+        <div class="lin_3" style="color: #FFF;">
         <h1>Hey Productions</h1>
         <h4>A strategic content calendar</h4>
         </div>
     </div>
     <div class="col_2">
-        <div class="formular_front">
+        <div class="formular_front" style="margin: 80px auto;">
             <form action="index.php" method="post" name="formsignin" id="formsignin">
                 <table width="70%" align="center" cellspacing="0" class="list">
                     <tr valign="baseline" height="40">
