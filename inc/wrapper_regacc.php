@@ -62,7 +62,7 @@ if (isset($_POST['email'])) {
     <div class="col_2" style="text-align: center;">
         <h3>Välkommen!</h3>
         <p style="color: #666;">It take a few steps to get started with HP10</p>
-        <div class="formular_front">
+        <div class="formular_front" style="margin: 5px auto;">
             <form action="reg_access.php" method="post" name="formsignup" id="formsignup">
                 <table width="70%" align="center" cellspacing="0" class="list">
                     <tr valign="baseline" height="40">

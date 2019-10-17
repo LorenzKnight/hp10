@@ -108,6 +108,14 @@ body {
     box-shadow: 0 10px 24px 0 rgba(50,49,58,.25);
     font-weight: 200;
 }
+.target_trademark {
+    width: 360px;
+    padding: 20px 0;
+    border-radius: 7px;
+    background-color: #FFF;
+    box-shadow: 0 10px 24px 0 rgba(50,49,58,.25);
+    font-weight: 200;
+}
 .text_input {
     margin: 5px 0;
     padding: 12px 10px;
