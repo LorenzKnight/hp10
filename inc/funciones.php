@@ -98,4 +98,24 @@ function ObtenerApellidoUsuario($apellido)
 	mysqli_free_result($ConsultaFuncion);
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+function sumatarget($resultado)
+{
+	global $con;
+	
+	$query_ConsultaFuncion = sprintf("SELECT target_percentage FROM target_group WHERE id_target = %s ",
+		 GetSQLValueString($resultado, "int"));
+	//echo $query_ConsultaFuncion;
+	$ConsultaFuncion = mysqli_query($con,  $query_ConsultaFuncion) or die(mysqli_error($con));
+	$row_ConsultaFuncion = mysqli_fetch_assoc($ConsultaFuncion);
+	$totalRows_ConsultaFuncion = mysqli_num_rows($ConsultaFuncion);
+	
+	return $row_ConsultaFuncion["target_percentage"];	
+	
+	mysqli_free_result($ConsultaFuncion);
+}
 ?>

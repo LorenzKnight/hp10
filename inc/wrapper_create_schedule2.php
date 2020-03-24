@@ -78,7 +78,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "formrequest")) {
         </div>
         <?php } ?>
         <?php if ($totalRows_DatosTrade == 3){?>
-          <a href="create_your_schedule2.php"><input style="padding: 20px 100px; margin-top: 150px; text-align: center;" type="" class="button" value="NEXT"/></a>
+          <a href="priority_1.php"><input style="padding: 20px 100px; margin-top: 150px; text-align: center;" type="" class="button" value="NEXT"/></a>
         <?php } ?>
     </div>
 </div>

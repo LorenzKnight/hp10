@@ -7,10 +7,21 @@
     </div>
     <div id="menu">
         <ul>
-            <!-- <li><a href="contact.php"<?php if ($menuactive == 4) { ?> class="active" <?php }?>>kontakt</a></li>
-            <li><a href="schemma.php"<?php if ($menuactive == 3) { ?> class="active" <?php }?>>schemma</a></li>
-            <li><a href="price_registration.php"<?php if ($menuactive == 2) { ?> class="active" <?php }?>>priser & anmälan</a></li> 
-            <li><a href="index.php"<?php if ($menuactive == 1) { ?> class="active" <?php }?>><div style="border:1px solid #FFF; padding: 5px 10px; border-radius: 15px;">Log in</div></a></li>-->
+            <!-- <li><a href="contact.php"<?php if ($menuactive == 4) { ?> class="active" <?php }?>>kontakt</a></li>-->
+            <li><a href="inc/logout.php"<?php if ($menuactive == 3) { ?> class="active" <?php }?>>Log out</a></li>
+            <li><a href="my_dash.php">
+            <?php
+            if ((isset($_SESSION['MM_Username'])) && ($_SESSION['MM_Username'] != ""))
+            {
+                echo ObtenerNombreUsuario($_SESSION['hp10_UserId']);
+                echo " ". ObtenerApellidoUsuario($_SESSION['hp10_UserId']);
+            }
+            else
+            { ?>
+                No User...
+            <?php } ?>
+            </a></li>
+            <!--<li><a href="#"<?php if ($menuactive == 1) { ?> class="active" <?php }?>><div style="border:1px solid #FFF; padding: 5px 10px; border-radius: 15px;"><?php echo $_SESSION['hp10_UserId']; ?></div></a></li>-->
         <ul>
     </div>
     <?php if($_GET["gdpr"]):?>
