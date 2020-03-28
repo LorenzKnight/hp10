@@ -12,7 +12,7 @@ body {
     display: flex;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 100;
 }
 .head_in {
     width: 100%;
@@ -23,7 +23,7 @@ body {
     position: fixed;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
     top: 0;
-    z-index: 1;
+    z-index: 100;
 }
 .logo {
     height: 80px;
@@ -82,6 +82,15 @@ body {
     overflow: auto;
     background-color: #FFF;
     display: flex;
+}
+.calendar {
+    width: 83%;
+    text-align: center;
+    background-color: #FFF;
+    margin: 0 auto 20px;
+    border-radius: 7px;
+    padding: 1%;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
 }
 .col_2 {
     height: 630px;

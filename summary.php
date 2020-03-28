@@ -44,17 +44,12 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "formrequest")) {
 <title>HP10</title>
 <link rel="shortcut icon" href="favicon-32x32.png">
 <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
-
-<script src="fullcalendar/js/jquery.min.js"></script>
-<script src="fullcalendar/js/moment.min.js"></script>
-<!--Full calendar-->
-<link rel="stylesheet" href="fullcalendar/css/fullcalendar.min.css"/>
-<script src="fullcalendar/js/fullcalendar.min.js"></script>
-
+<script>
+</script>
 </head>
 <body>
 <?php include("inc/header_in.php"); ?>
-<?php include("inc/wrapper_my_dash.php"); ?>
+<?php include("inc/wrapper_summary.php"); ?>
 <?php include("inc/foot_front.php"); ?>
 </body>
 </html>
